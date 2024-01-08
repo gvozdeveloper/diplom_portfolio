@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+$bg_main: #F3F2F0;
+$bg_port: #E7E6E6;
+$black: #010101;
+
+$font-inter: 'Inter', sans-serif;
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.4rem;
+    font-family: $font-inter;
+    color: $black;
+    background: #F3F2F0;
+}
+
+.main {
+    margin-top: 0;
+    padding-top: 0;
+}
+.header {
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 4rem;
+        padding-bottom: 6rem;
+    }
+    &__nav {
+        display: flex;
+        list-style-type: none;
+        gap: 4rem;
+        padding-left: 0;
+    }
+
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.portfolio {
+    background: $bg_port;
+    padding: 50rem auto;
+}
+.picture {
+
+    &__img {
+        object-fit: cover;
+        object-position: 0% 15%;
+        width: 100%;
+        height: 31rem;
+        position: relative;
+        overflow: hidden;
+    }
+}
